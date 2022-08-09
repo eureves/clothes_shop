@@ -1,6 +1,9 @@
 import CategoryPreview from "../../components/category-preview/category-preview.component";
 import { useSelector } from "react-redux";
-import { categoriesSelector } from "../../store/categories/category.selector";
+import {
+  categoriesIsLoadingSelector,
+  categoriesSelector,
+} from "../../store/categories/category.selector";
 import "./categories-preview.styles.scss";
 
 const CategoriesPreview = () => {
