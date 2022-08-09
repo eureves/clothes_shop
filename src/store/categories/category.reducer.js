@@ -3,7 +3,7 @@ import { CATEGORIES_ACTION_TYPES } from "./category.action.types";
 export const CATEGORIES_INITIAL_STATE = {
   categoriesArray: [],
   isLoading: Boolean,
-  error: null,
+  error: {},
 };
 
 export const categoriesReducer = (state = CATEGORIES_INITIAL_STATE, action = {}) => {
