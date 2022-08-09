@@ -3,11 +3,12 @@ import { CATEGORIES_ACTION_TYPES } from "./category.action.types";
 export const CATEGORIES_INITIAL_STATE = {
   categoriesArray: [],
   isLoading: Boolean,
-  error: {},
+  error: null,
 };
 
 export const categoriesReducer = (state = CATEGORIES_INITIAL_STATE, action = {}) => {
   const { type, payload } = action;
+  console.log(action);
 
   switch (type) {
     case CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START:
